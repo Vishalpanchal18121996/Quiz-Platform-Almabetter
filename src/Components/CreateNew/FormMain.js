@@ -12,6 +12,7 @@ export const FormMain = () => {
 
   const [question, setquestion] = useState([]);
 
+
   const [added, setadded] = useState(false);
 
   const [answerLength, setanswerLength] = useState(false);
@@ -71,6 +72,7 @@ export const FormMain = () => {
   };
 
   const addQuestionHandler = (e) => {
+       3443434=
     e.preventDefault();
 
     if (questionRef.current.value === "" || answers.length === 0) {
@@ -184,7 +186,7 @@ export const FormMain = () => {
           <div className="form-submit-answers form-padding d-flex">
             {answers.map((el, i) => (
               <AnswerCard
-                text={el.answer}
+                text={el.answer}  
                 id={el.id}
                 key={i}
                 correct={el.correct}
